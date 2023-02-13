@@ -13,16 +13,16 @@ public class UserRegistration {
         System.out.println("welcome to User Registration program");
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your E-mail :");
+        System.out.print("Enter your Mobile Number :");
         String input = scanner.next();
-         String regex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+         String regex = "(91)(-)[6-9]{1}+[0-9]{9}+$";
         //String regex = "[A-Z]+[a-zA-z0-9]{5,}+[0-9]+[@$*_-]{1}+$";
         userName(regex, input);
 
         if (input.matches(regex) == true)
-            System.out.println("Valid E-mail");
+            System.out.println("Valid Mobile Number");
         else
-            System.out.println("Invalid E-mail");
+            System.out.println("Invalid Mobile Number");
 
     }
 }
